@@ -1,0 +1,1 @@
+(()=>{"use strict";[...document.querySelectorAll(".menu__list-link"),document.querySelector(".header__icon")].forEach((e=>{e.addEventListener("click",(e=>{e.preventDefault(),console.log(e.target.closest("a"));const t=e.target.closest("a").getAttribute("href").substring(1),o=document.getElementById(t);o&&o.scrollIntoView({block:"center",behavior:"smooth"})}))}))})();
