@@ -1,0 +1,257 @@
+@media (max-width: 1658px) {
+  .conquer {
+    background: unset;
+  }
+  .conquer__inner {
+    width: 100%;
+  }
+  .conquer__title {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .menu__list {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .menu__btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .menu__btn span::before, .menu__btn span::after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+  .menu__btn span::after {
+    top: 13px;
+  }
+
+  .menu__list {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s;
+    transform-origin: center;
+  }
+  .menu__list .menu__list-link {
+    display: block;
+    width: 100%;
+    color: #000;
+  }
+  .menu__list-item + .menu__list-item {
+    margin: 30px 0 0 0;
+  }
+
+  .menu__list.menu__list--active {
+    max-width: 320px;
+    width: 100%;
+    padding: 30px;
+    right: 0;
+  }
+
+  .menu__btn.menu__btn--active span {
+    height: 0;
+  }
+  .menu__btn.menu__btn--active span::before {
+    top: 0;
+    transform-origin: center;
+    transform: rotate(50deg);
+  }
+  .menu__btn.menu__btn--active span::after {
+    top: 0;
+    transform-origin: center;
+    transform: rotate(-232deg);
+  }
+
+  .header {
+    overflow: hidden;
+  }
+  .header__title {
+    font-size: 140px;
+  }
+  .header__logo {
+    transform: translate(0);
+  }
+  .header__top {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .slider-blog__content {
+    right: 100px;
+  }
+
+  .slider-blog__title {
+    font-size: 26px;
+  }
+
+  .map {
+    padding: 30px;
+  }
+
+  .school__wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .school__desc {
+    margin-left: unset;
+  }
+
+  .gallery__nav {
+    text-align: center;
+  }
+
+  .gallery__items {
+    justify-content: center;
+  }
+
+  .blockquote__subtitle {
+    margin-left: 0;
+  }
+
+  .team__items, .services__items, .request__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .request__right {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about, .school, .conquer, .services {
+    padding: 100px 0;
+  }
+
+  .about__text {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+
+  .about__text P {
+    max-width: 100%;
+  }
+
+  .school__items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .school__desc {
+    max-width: 100%;
+  }
+
+  .gallery__title, .blog__title, .team__title, .request__title {
+    margin-bottom: 100px;
+  }
+
+  .numbers {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .map {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 520px) {
+  .header__title {
+    font-size: 80px;
+  }
+  .header__subtitle {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .title::after {
+    display: none;
+  }
+
+  .statistics {
+    width: 255px;
+  }
+
+  .gallery__nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .gallery__btn + .gallery__btn {
+    margin-left: 0;
+  }
+
+  .blockquote {
+    font-size: 25px;
+  }
+
+  .gallery__show-btn, .services__title, .numbers {
+    margin-bottom: 100px;
+  }
+
+  .request__right {
+    padding: 20px;
+  }
+
+  .form__btn {
+    margin-bottom: 60px;
+  }
+
+  .map img {
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 375px) {
+  .header__subtitle {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .video {
+    padding: 150px;
+  }
+}/*# sourceMappingURL=media.css.map */
