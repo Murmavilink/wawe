@@ -7,7 +7,6 @@ export const smoothScroll = () => {
         
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log(e.target.closest('a'));
             const id = e.target.closest('a').getAttribute('href').substring(1);
             const section = document.getElementById(id);
 
