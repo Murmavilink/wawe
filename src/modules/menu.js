@@ -40,7 +40,21 @@ export const addingClassScroll = () => {
     });
 };
 
+
 export const burgerMenu = () => {
-    
+    const headerInner = document.querySelector('.header__inner');
+    const menuList = document.querySelector('.menu__list');
+    const menuBtn = document.querySelector('.menu__btn');
+
+    const handlerMenu = () => {
+        menuBtn.classList.toggle('menu__btn--active');
+        menuList.classList.toggle('menu__list--active');
+    };
+
+    headerInner.addEventListener('click', (e) => {
+        if(e.target.closest('.menu__btn'))  handlerMenu();
+        if(e.target.closest('.menu__list-link')) handlerMenu();
+    });
+
 };
 
