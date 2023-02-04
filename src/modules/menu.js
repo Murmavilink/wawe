@@ -1,7 +1,7 @@
 export const smoothScroll = () => {
     const links = document.querySelectorAll('.menu__list-link');
 
-    const arrayLinks = [...links, document.querySelector('.header__scrool-icon')];
+    const arrayLinks = [...links, document.querySelector('.header__scroll-icon')];
 
     arrayLinks.forEach(link => {
         
