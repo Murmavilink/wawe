@@ -524,9 +524,22 @@ body {
   margin-bottom: 200px;
 }
 
-.slider-blog__slide {
+.slider-blog {
   position: relative;
 }
+
+.slider-blog__slide {
+  position: relative;
+  opacity: 0;
+  display: none;
+  transition: all .3s;
+}
+
+.slider-blog__slide--active {
+  opacity: 1;
+  display: block;
+}
+
 .slider-blog__slide img {
   width: 100%;
   height: 100%;
@@ -540,7 +553,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(36, 33, 33, 0.5);
+  background: rgba(36, 33, 33, 0.257);
 }
 .slider-blog__content {
   position: absolute;
@@ -564,25 +577,33 @@ body {
   letter-spacing: 0.6px;
   color: #FFFFFF;
 }
-.slider-blog .swiper-button-prev::after,
-.slider-blog .swiper-button-next::after {
-  color: #fff;
-  font-size: 35px;
+
+.slider-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
 }
-.slider-blog .swiper-pagination {
-  bottom: 30px;
-}
-.slider-blog .swiper-pagination-bullet {
-  width: 15px;
+
+.dot{
+  display: inline-block;
   height: 15px;
+  width: 15px;
+  margin: 0 8px;
   background-color: #fff;
-  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  cursor: pointer;
 }
-.slider-blog .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .slider-blog .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet + .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .slider-blog .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin-left: 15px;
+
+.dot:hover {
+  background-color: #717171;
 }
-.slider-blog .swiper-pagination-bullet-active {
-  background-color: #00B2A0;
+
+.dot--active {
+  height: 20px;
+  width: 20px;
+  background-color: #717171;
 }
 
 .team {

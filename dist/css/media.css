@@ -109,8 +109,14 @@
     font-size: 35px;
   }
 
+  .slider-blog__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   .slider-blog__content {
-    right: 100px;
+    right: 70px;
+    left: 40px;
   }
 
   .slider-blog__title {
@@ -240,6 +246,11 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+
+  .slider-blog__slide {
+    height: 350px;
+  }
+
 }
 @media (max-width: 375px) {
   .header__subtitle {
