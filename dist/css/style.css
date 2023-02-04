@@ -129,7 +129,7 @@ body {
 .header__logo,
 .menu,
 .header__play,
-.header__icon {
+.header__scrool-icon {
 	z-index: 5;
 }
 
@@ -218,7 +218,7 @@ body {
 	fill: #00B2A0;
 }
 
-.header__icon {
+.header__scrool-icon {
   margin-top: auto;
   margin-bottom: 92px;
   -webkit-animation: anim-icon 1.5s infinite alternate linear;
