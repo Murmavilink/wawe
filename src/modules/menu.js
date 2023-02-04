@@ -23,6 +23,23 @@ export const smoothScroll = () => {
 
 };
 
+export const addingClassScroll = () => {
+    const headerTop = document.querySelector('.header__top');
+
+    window.addEventListener('scroll', () => {
+        
+        // также можно использовать 
+        //document.documentElement.scrollTop
+        
+        if(window.pageYOffset > 570) {
+            headerTop.classList.add('header__top--active');
+        } else {
+            headerTop.classList.remove('header__top--active');
+        }
+
+    });
+};
+
 export const burgerMenu = () => {
     
 };
