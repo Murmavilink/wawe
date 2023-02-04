@@ -4,6 +4,9 @@ import { burgerMenu } from './modules/menu';
 import { audio } from './modules/audio';
 import { tabs } from './modules/tabs';
 import { slider } from './modules/slider';
+import fslightbox from 'fslightbox';
+
+
 
 smoothScroll();
 addingClassScroll();
@@ -11,3 +14,4 @@ burgerMenu();
 audio();
 tabs();
 slider();
+fslightbox();
