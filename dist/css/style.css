@@ -530,22 +530,46 @@ body {
 
 .slider-blog__slide {
   position: relative;
-  opacity: 0;
   display: none;
   transition: all .3s;
 }
 
 .slider-blog__slide--active {
-  opacity: 1;
   display: block;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .slider-blog__slide img {
   width: 100%;
   height: 100%;
+  min-height: 792px;
   max-height: 792px;
   object-fit: cover;
 }
+
+
+.fade{
+  /* Animation support for different browsers */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+  }
+  
+  @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+  } 
+
+  
 .slider-blog__slide::after {
   content: "";
   position: absolute;
@@ -580,6 +604,8 @@ body {
 
 .slider-pagination {
   position: absolute;
+  text-align: center;
+  width: 100%;
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
@@ -597,13 +623,13 @@ body {
 }
 
 .dot:hover {
-  background-color: #717171;
+  background-color: #0D302C;
 }
 
 .dot--active {
   height: 20px;
   width: 20px;
-  background-color: #717171;
+  background-color: #0D302C;
 }
 
 .team {

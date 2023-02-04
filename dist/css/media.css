@@ -109,18 +109,9 @@
     font-size: 35px;
   }
 
-  .slider-blog__title {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
   .slider-blog__content {
     right: 70px;
     left: 40px;
-  }
-
-  .slider-blog__title {
-    font-size: 26px;
   }
 
   .map {
@@ -247,8 +238,19 @@
        object-fit: cover;
   }
 
-  .slider-blog__slide {
-    height: 350px;
+  .slider-blog__slide img{
+    min-height: 350px;
+  }
+
+  
+  .slider-blog__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
   }
 
 }
