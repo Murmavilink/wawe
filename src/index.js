@@ -4,7 +4,7 @@ import { burgerMenu } from './modules/menu';
 import { audio } from './modules/audio';
 import { tabs } from './modules/tabs';
 import { slider } from './modules/slider';
-import fslightbox from 'fslightbox';
+import { lightbox } from './modules/lightbox';
 
 
 
@@ -14,4 +14,4 @@ burgerMenu();
 audio();
 tabs();
 slider();
-fslightbox();
+lightbox();

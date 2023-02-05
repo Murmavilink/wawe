@@ -551,13 +551,13 @@ body {
 }
 
 
-.fade{
+/* .fade{ */
   /* Animation support for different browsers */
-    -webkit-animation-name: fade;
+    /* -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
-  }
+    animation-duration: 1.5s; */
+  /* } */
   
   @-webkit-keyframes fade {
       from {opacity: .4}
@@ -859,4 +859,27 @@ body {
 .btn:hover {
   color: #fff;
   background-color: #00B2A0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.modal-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .8);
+  transition: all .3s;
+}
+
+.modal-lightbox--show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
