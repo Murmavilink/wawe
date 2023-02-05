@@ -455,7 +455,8 @@ body {
 .gallery__items {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px 15px;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 .gallery__item {

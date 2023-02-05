@@ -5,12 +5,9 @@ export const tabs = () => {
     galleryNav.addEventListener('click', (e) => {
 
         if(e.target.classList.contains('gallery__btn')) {   
-
-            const dataTab = e.target.dataset.tab;
-
-            if(dataTab === 'all') return removeClassHidden(galleryItems);
-
-            const tabItems = document.querySelectorAll('.' + dataTab);
+            if(e.target.dataset.tab === 'all') return removeClassHidden(galleryItems);
+ 
+            const tabItems = document.querySelectorAll(`[data-tabBlock=${e.target.dataset.tab}]`);
 
             addClassHidden(galleryItems);
             removeClassHidden(tabItems);
